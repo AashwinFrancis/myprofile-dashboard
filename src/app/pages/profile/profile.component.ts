@@ -12,16 +12,14 @@ export class ProfileComponent {
   constructor() {
     this.employee = {
       ID: 7,
-      FirstName: 'Sandra',
-      LastName: 'Johnson',
-      Prefix: 'Mrs.',
-      Position: 'Controller',
-      Picture: 'images/employees/06.png',
-      BirthDate: new Date('1974/11/5'),
-      HireDate: new Date('2005/05/11'),
-      /* tslint:disable-next-line:max-line-length */
-      Notes: 'Sandra is a CPA and has been our controller since 2008. She loves to interact with staff so if you`ve not met her, be certain to say hi.\r\n\r\nSandra has 2 daughters both of whom are accomplished gymnasts.',
-      Address: '4600 N Virginia Rd.'
+      FirstName: 'Ashwin',
+      LastName: 'Francis',
+      Prefix: 'Mr.',
+      Position: 'Software developr',
+      Picture: 'assets/images/profile.png',
+      BirthDate: new Date('2000/06/08'),
+      Notes: 'Iam a passionate Angular frontend developer with a keen eye for user-centric design and a knack for creating visually appealing web experience . With expertise in Angular, TypeScript, HTML5, CSS3, and JavaScript, I craft responsive and dynamic web applications that elevate user interactions.',
+      Address: 'Abhishek bhavan karode'
     };
     this.colCountByScreen = {
       xs: 1,
