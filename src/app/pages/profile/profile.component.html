@@ -1,17 +1,126 @@
 <h2 class="content-block">Profile</h2>
 
 <div class="content-block dx-card responsive-paddings">
-  <div class="form-avatar">
-    <img src="{{employee.Picture}}"/>
+  <div>
+    <div class="form-avatar">
+      <img src="{{employee.Picture}}"/>
+    </div>
+    <span>{{employee.Notes}}</span>
   </div>
-  <span>{{employee.Notes}}</span>
+  
+  
+ <div class="download"> <button class="btn" (click)="downloadResume()"> Download Resume
+</button></div>
 </div>
 
 <div class="content-block dx-card responsive-paddings">
-  <dx-form id="form"
-    [formData]="employee"
-    labelLocation="top"
-    [colCountByScreen]="colCountByScreen"
-  >
-  </dx-form>
+  <div class="header">
+    <h1 style="font-size: 30px; font-weight: 500;">ASHWIN FRANCIS</h1>
+    <p>Email: <a href="mailto:ashwinfrancis004@gmail.com">ashwinfrancis004@gmail.com</a> | Phone:  <a href="tel:+918139077531">+91 8139077531</a>    </p>
+    <p>Address: Abhishek Bhavan, Karode, Karode PO, 695506</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ashwin-francis-278b52244" target="_blank">linkedin.com/in/ashwin-francis-278b52244</a> | GitHub: <a href="https://github.com/AashwinFrancis" target="_blank">AashwinFrancis</a></p>
+</div>
+
+  
+  <div class="section summary">
+    <h2>CAREER SUMMARY:
+    </h2>
+    <p>Experienced software developer with a strong foundation in Angular, Python, HTML,
+      CSS, JavaScript, Ionic, and WordPress. Proficient in data analysis with a year of
+      industry experience, adept at crafting efficient solutions and delivering high-quality
+      results.</p>
+  </div>
+  
+  <div class="section experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>Associate software developer  </h3>
+      <p>Web Developer | 01 DEC, 2023 - Present</p>
+      <ul>
+        <li>Contributed to the development of Dailystore, a project integrating Angular for
+          frontend web development and Ionic for mobile application development.
+          </li>
+        <li>Engaged in the Renting App project, leveraging Python for backend API
+          development, ensuring robust and efficient system functionality.</li>
+          <li>Converted HTML designs into WordPress themes, ensuring seamless integration of design and functionality across multiple client websites.
+          </li>
+          <li>Designed HTML websites, focusing on responsive and user-friendly interfaces to meet client requirements.
+          </li>
+          <li>Utilized Git for version control, ensuring collaborative development and effective code management across projects.
+          </li>
+      </ul>
+    </div>
+    <div class="experience">
+      <h3>Software Engineer Intern </h3>
+      <p>Junior Web Developer | 01 February, 2022 - 20 NOV, 2023</p>
+      <ul>
+        <li>Worked with design teams and Senior Software Engineers to build customized
+          software products for consumers.</li>
+        <li>Designed and implemented scalable applications for data extraction and analysis.</li>
+        <li>Developed and tested software components using Java, JavaScript, HTML, CSS
+          and SQL, Angular, Django</li>
+          <li>Partnered with team members to learn best practices in software design.
+          </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="section education">
+    <h2>Education</h2>
+    <div class="education">
+      <h3>BE in Computer Science Engineering</h3>
+      <p>Bethlahem Institute of Engineering , karungal
+        2018-2022 I CGPA - 7.61.</p>
+    </div>
+    <div class="education">
+      <h3>Higher Secondary Education</h3>
+      <p>ST . MARY’S Higher Secondary School
+        2016-2018 I percentage - 70.00.
+        </p>
+    </div>
+    <div class="education">
+      <h3>SSLC</h3>
+      <p>Evans High School ,Parassala
+        2015-2016 I percentage - 84.00
+        </p>
+    </div>
+  </div>
+
+  <div class="section education">
+    <h2>PERSONAL DETAILS
+</h2>
+    <div class="education">
+      <h3>Date of Birth :
+      </h3>
+      <p> 08-06-2000</p>
+    </div>
+    <div class="education">
+      <h3>Nationality  :</h3>
+      <p>English </p>
+       <p>Malayalam</p> 
+        <p>Tamil</p>
+        
+       
+    </div>
+    <div class="education">
+      <h3>Languages</h3>
+      <p>Evans High School ,Parassala
+        2015-2016 I percentage - 84.00
+        </p>
+    </div>
+  </div>
+  <div class="section skills">
+    <h2>Skills</h2>
+    <ul>
+      <button class="btn">Angular</button>
+      <button class="btn">JavaScript</button>
+      <button class="btn">Wordpress</button>
+      <button class="btn">HTML</button>
+      <button class="btn">CSS</button>
+      <button class="btn">Ionic</button>
+      <button class="btn">Git</button>
+      <button class="btn">Python</button>
+      <button class="btn">Django</button>
+    </ul>
+  </div>
 </div>

@@ -28,4 +28,17 @@ export class ProfileComponent {
       lg: 4
     };
   }
+  updateEmployeeData(newData: any) {
+    this.employee = { ...this.employee, ...newData };
+  }
+  downloadResume() {
+    // Replace 'resume.pdf' with the actual path to your resume file
+    const resumeUrl = 'assets/resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'AshwinFrancis_Resume.pdf'; // Specify the filename for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 }

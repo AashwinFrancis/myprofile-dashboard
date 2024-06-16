@@ -16,3 +16,119 @@
     margin: 0 auto;
   }
 }
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s;
+}
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #333;
+}
+.header p {
+  margin: 5px 0;
+  color: #666;
+}
+.section {
+  margin-bottom: 20px;
+  animation: fadeInUp 1s;
+}
+.section h2 {
+  border-bottom: 0.5px solid #333;
+  padding-bottom: 5px;
+  color: #000000;
+}
+.experience, .education {
+  margin-bottom: 10px;
+}
+.experience h3, .education h3 {
+  margin: 5px 0;
+  color: #333;
+}
+.experience p, .education p {
+  margin: 0;
+  color: #666;
+}
+.experience ul, .education ul {
+  margin: 10px 0 0 20px;
+  padding: 0;
+  color: #666;
+}
+.experience ul li, .education ul li {
+  margin-bottom: 5px;
+}
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+.skills ul li {
+  background: #007bff;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  animation: fadeIn 1s;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.btn {
+  padding: 1rem 2rem;
+  font-weight: 700;
+  background: rgb(255, 255, 255);
+  color: blueviolet;
+  border-radius: .5rem;
+  border-bottom: 2px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 1s;
+  margin-right: 20px;
+    margin-bottom: 20px;
+  transition-property: border-top, 
+     border-left, 
+     border-bottom,
+     border-right,
+     box-shadow;
+ }
+ 
+ .btn:hover {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+ }
+ .download{
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+
+ }
