@@ -14,5 +14,10 @@ export const navigation = [
       },
       
     ]
-  }
+  },
+  {
+    text: 'Chatbot',
+    path: '/chatbot',
+    icon: 'chatbot'
+  },
 ];

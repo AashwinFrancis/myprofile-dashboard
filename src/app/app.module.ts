@@ -7,10 +7,14 @@ import { FooterModule, ResetPasswordFormModule, CreateAccountFormModule, ChangeP
 import { AuthService, ScreenService, AppInfoService } from './shared/services';
 import { UnauthenticatedContentModule } from './unauthenticated-content';
 import { AppRoutingModule } from './app-routing.module';
+import { ChatbotComponent } from './pages/chatbot/chatbot.component';
+import { FormsModule } from '@angular/forms'; // Add this import
+import { CommonModule } from '@angular/common'; // Add this import
 
 @NgModule({
   declarations: [
     AppComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import { AppRoutingModule } from './app-routing.module';
     ChangePasswordFormModule,
     LoginFormModule,
     UnauthenticatedContentModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, // Add this to imports array
+    CommonModule // Add this to imports array
   ],
   providers: [
     AuthService,

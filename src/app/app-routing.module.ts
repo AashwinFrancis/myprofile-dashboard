@@ -5,6 +5,7 @@ import { AuthGuardService } from './shared/services';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
+import { ChatbotComponent } from './pages/chatbot/chatbot.component';
 
 const routes: Routes = [
 
@@ -16,6 +17,11 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    canActivate: [ AuthGuardService ]
+  },
+  {
+    path: 'chatbot',
+    component: ChatbotComponent,
     canActivate: [ AuthGuardService ]
   },
   {
